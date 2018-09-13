@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @quote = [1,2,3,4].shuffle.first
   end
 
   def education
