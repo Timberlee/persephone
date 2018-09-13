@@ -1,0 +1,8 @@
+<section>
+<h1>User Log In</h1>
+<%= form_for(:session, url: login_path) do |f| %>
+<p><%= f.email_field :email, required: true %></p>
+<p><%= f.password_field :password, placeholder: "Password!", required: true %></p>
+<%= f.submit 'Log In' %>
+<% end %>
+</section>
