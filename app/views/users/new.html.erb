@@ -1,2 +1,19 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+<section >
+<h1>Sign up for Persephone</h1>
+<%= form_for(@user) do |f| %></p>
+  <p><%= f.text_field :first_name, placeholder: 'First Name' %></p>
+  <p><%= f.text_field :last_name, placeholder: 'Last Name'  %> </p>
+  <p><%= f.email_field :email, placeholder: 'Email', required: true  %>  </p>
+  <p><%= f.password_field :password, placeholder: 'Create a Password', required: true %></p>
+  <p><%= f.password_field :password_confirmation, placeholder: 'Confirm Password', required: true %> </p>
+  <p><%= f.label :photo, 'Upload a photo' %>
+  <%= f.file_field :photo %></p>
+  <p><%= f.text_area :bio, placeholder: 'Write a quick bio' %>  </p>
+  <label>Location: </label><%= f.select :location, [["North East", "North East"], ["South East", "South East"], ["Mid West", "Mid West"], ["South West", "South West"]], required: true %></p>
+
+
+  <%= f.submit 'Register' %>
+  <% end %>
+
+</section>
