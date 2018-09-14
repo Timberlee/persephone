@@ -10,7 +10,7 @@
   <p><%= f.label :photo, 'Upload a photo' %>
   <%= f.file_field :photo %></p>
   <p><%= f.text_area :bio, placeholder: 'Write a quick bio' %>  </p>
-  <label>Location: </label><%= f.select :location, [["North East", "North East"], ["South East", "South East"], ["Mid West", "Mid West"], ["South West", "South West"]], required: true %></p>
+  <label>Location: </label><%= f.select :location, [["East Coast", "East Coast"], ["West Coast", "West Coast"], ["Middle America", "Middle America"], ["Alaska & Hawaii", "Alaska & Hawaii"]], required: true %></p>
 
 
   <%= f.submit 'Register' %>
