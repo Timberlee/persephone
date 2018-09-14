@@ -1,5 +1,5 @@
 <% if logged_in? %>
-<nav >
+<nav class='nav'>
 <div ><h1><%= link_to 'Persephone', root_path %></h1></div>
 <div><%= link_to "Educate", learn_path %></div>
 <div><%= link_to "Inform", info_path %></div>
@@ -7,7 +7,7 @@
 <div><%= link_to 'Log Out', logout_path, method: :delete %></div>
 </nav>
 <% else %>
-<nav >
+<nav class='nav'>
 <div ><h1><%= link_to 'Persephone', root_path %></h1></div>
 <div><%= link_to "Educate", learn_path %></div>
 <div><%= link_to "Inform", info_path %></div>
