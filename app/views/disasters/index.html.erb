@@ -1,9 +1,10 @@
 
 <section class="all">
 <% @disaster.each do |disaster| %>
-<div>
+<div class='disaster-box'>
 <h1><%= link_to "#{disaster.name}", disaster_path(disaster.id) %> </h1>
 <ul><li><%= disaster.basic %></li>
 <li><%= disaster.basic2 %></li>
-<li><%= disaster.basic3 %></li></ul></div>
+<li><%= disaster.basic3 %></li></ul>
+</div>
 <% end %>
