@@ -38,7 +38,7 @@ end
   private
 
   def disaster_params
-    params.require(:disaster).permit(:name, :description, :before, :during, :after, :basic, :basic2, :basic3, :similar, :regions)
+    params.require(:disaster).permit(:name, :description, :before, :during, :photo, :after, :basic, :basic2, :basic3, :similar, :regions)
   end
 
   def find_disaster
