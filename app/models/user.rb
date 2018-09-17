@@ -1,5 +1,8 @@
 class User < ApplicationRecord
   before_save { self.email = email.downcase }
+  def full_name
+  self.first_name + " " + self.last_name
+  end
   has_one_attached :photo
   has_secure_password
   validates :password, presence: true, length: {maximum: 32, minimum: 8}

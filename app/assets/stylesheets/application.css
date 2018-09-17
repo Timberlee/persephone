@@ -14,11 +14,50 @@
  *= require_self
  */
 
+ :root {
+  --g: rgb(102, 142, 84);
+  --t: rgb(223, 186, 106);
+  --b: rgb(85,73,62);
+  --s: rgb(222,201,141);
+  --o: rgb(45,35,182);
+  --ss: rgb(162, 191, 204);
+  --n: rgb(30,37,53);
+  --br: rgb(127,108,75);
+  --co: rgb(99,109,124);
+  --l: rgb(104,148,48);
+  --ps: rgb(154,186,106);
+  --or: rgb(250,101,38);
+}
+
 .body {
   margin: 0 0 0 0;
 }
 
 .nav {
   display: grid;
-  grid-template: 15vh / 1fr 1fr 1fr 1fr 1fr
+  grid-template: 15vh / 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 5%;
+  font-size: 1.5vh;
+  grid-column-gap: 7.5%;
+}
+
+.nav h1 {
+  margin: 0 0 0 0;
+}
+
+.all {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-column-gap: 10vw;
+  grid-row-gap: 5vh;
+  margin: 0 10%;
+}
+
+.all div h1 {
+  text-align: center;
+  margin: 0 0 0 0;
+}
+
+.disaster {
+
 }

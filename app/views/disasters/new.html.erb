@@ -1,0 +1,20 @@
+
+<section >
+<h1>Disaster Maker</h1>
+<%= form_for(@disaster) do |f| %></p>
+    <label>Name: </label><p><%= f.text_field :name, placeholder: 'Name', required: true  %></p>
+    <label>Basic Info: </label><p><%= f.text_area :basic, placeholder: 'Basic Info', required: true   %> </p>
+    <label>Basic Info2: </label><p><%= f.text_area :basic2, placeholder: 'Basic Info', required: true   %> </p>
+    <label>Basic Info3: </label><p><%= f.text_area :basic3, placeholder: 'Basic Info', required: true   %> </p>
+    <label>Description: </label><p><%= f.text_area :description, placeholder: 'Description', required: true  %>  </p>
+    <label>Before: </label><p><%= f.text_area :before, placeholder: 'Before', required: true %></p>
+    <label>During: </label><p><%= f.text_area :during, placeholder: 'During', required: true %> </p>
+    <label>After: </label><p><%= f.text_area :after, placeholder: 'After', required: true %></p>
+    <label>Similar: </label><p><%= f.text_area :similar, placeholder: 'Similar Disasters', required: true  %> </p>
+  <label>Location: </label><%= f.text_area :regions, placeholder: 'Regions', required: true %></p>
+  <p><%= f.label :photo, 'Upload a photo' %>
+  <%= f.file_field :photo %></p>
+  <%= f.submit 'Create' %>
+  <% end %>
+
+</section>
