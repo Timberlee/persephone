@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :find_user, only: [:show, :edit, :update]
 
     def new
       @user = User.new
@@ -17,7 +18,7 @@ class UsersController < ApplicationController
 
     def update
   if @user.update(user_params)
-    p "article successfully updated"
+
     redirect_to @user
   else
     render 'edit'
@@ -45,6 +46,10 @@ end
 
     def user_params
       params.require(:user).permit(:first_name, :last_name, :email, :bio, :photo, :password, :password_confirmation, :location)
+    end
+
+    def find_user
+      @user = User.find(params[:id])
     end
 
   end
