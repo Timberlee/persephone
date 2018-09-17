@@ -27,7 +27,17 @@
   --l: rgb(104,148,48);
   --ps: rgb(154,186,106);
   --or: rgb(250,101,38);
+  --oro: rgb(250,101,38,.5);
+  --alpha: 0.5;
 }
+
+
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
 
 .body {
   margin: 0 0 0 0;
@@ -36,13 +46,16 @@
 .nav {
   display: grid;
   grid-template: 15vh / 1fr 1fr 1fr 1fr 1fr;
-  margin: 0 5%;
+  margin: 0 0%;
   font-size: 1.5vh;
   grid-column-gap: 7.5%;
+  grid-column-gap: 7.5%;
+  background-color: var(--s);
 }
 
 .nav h1 {
   margin: 0 0 0 0;
+  color: red;
 }
 
 .all {
@@ -59,5 +72,37 @@
 }
 
 .disaster {
+  text-align: center;
+  background-image: url();
+}
+
+/* will change based on actual data input */
+.disaster-box {
+  padding-top: 10%;
+  /* border: 1px solid blue; */
+  width: 20vw;
+  height: 153px;
+  background-color: var(--l);
+  /* color: var(--b); */
+  border-radius: 22%;
+}
+
+.disaster-box h1 {
+  color: var(--o);
+  text-decoration: none;
+}
+
+.log-reg {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.log-reg-box {
+  background-color: var(--t);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 15%;
 
 }
