@@ -5,7 +5,7 @@ module ApplicationHelper
 end
 
 def signup_background_image
-images = ["assets/s1.png",  "assets/s3.jpg", "assets/s4.jpg", "assets/s5.jpg","assets/s6.jpg","assets/s7.jpg"]
+images = ["assets/s1.jpg",  "assets/s3.jpg", "assets/s4.jpg", "assets/s5.jpg","assets/s6.jpg","assets/s7.jpg"]
 images[rand(images.size)]
 end
 
