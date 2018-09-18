@@ -18,4 +18,16 @@ def destroy
   p 'Logged out sucessfully'
   redirect_to root_path
 end
+
+def facebook
+  p 'started facebook login'
+   p 'request hash below'
+   request.env['omniauth.auth']
+   user = User.from_omniauth(request.env['omniauth.auth'])
+   p 'created user from omniauth hash'
+   p user
+   session[:user_id] = user.id
+   redirect_to '/success'
+ end
+
 end

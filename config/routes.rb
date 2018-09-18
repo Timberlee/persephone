@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'users/index'
 
+  get '/auth/:provider/callback', to: 'sessions#facebook'
+  get '/success' => 'pages#success'
+
   get '/learn' => 'pages#education'
   get '/info' => 'disasters#index'
   get '/change' => 'pages#involve'

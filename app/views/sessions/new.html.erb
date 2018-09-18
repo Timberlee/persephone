@@ -11,6 +11,7 @@
     <p><%= f.password_field :password, placeholder: "Password!", required: true %></p>
     <%= f.submit 'Log In' %>
     <%= link_to 'Sign Up', register_path %>
+    <%= link_to 'Login with Facebook', 'http://localhost:3000/auth/facebook' %>
     <% end %>
   </div>
 </section>
