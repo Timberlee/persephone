@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cantora+One|Noto+Serif+JP|Oxygen|Paprika" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
   <body>
     <%= render 'layouts/header' %>
@@ -15,6 +16,9 @@
 <h4><%= message %></h4>
 <% end %>
 </ul>
+
+  <body>
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -36,6 +40,7 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
     <%= yield %>
   </body>
 </html>
