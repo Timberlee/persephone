@@ -1,4 +1,4 @@
-
+<body style="background-image: url(<%= @disaster.similar %>)" class='disaster-bg'>
 <section class='disaster'>
   <h1><%= @disaster.name %> </h1><br>
   <%= @disaster.photo.attachment.nil? ? 'No photo' : image_tag(@disaster.photo) %><br>

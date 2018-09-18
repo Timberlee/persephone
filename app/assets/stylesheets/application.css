@@ -77,6 +77,26 @@ nav {
   background-color: rgb(222,201,141,.90);
 }
 
+.nav div:nth-child(1) {
+
+}
+
+.nav div:nth-child(2) {
+
+}
+
+.nav div:nth-child(3) {
+
+}
+
+.nav div:nth-child(4) {
+
+}
+
+.nav div:nth-child(5) {
+
+}
+
 .nav div a {
   margin: 0 0 0 0;
     text-decoration: none;
@@ -93,6 +113,46 @@ nav {
   margin: 0 10%;
 }
 
+.all div:nth-child(1) {
+  background-color: var(--br);
+}
+
+.all div:nth-child(2) {
+  background-color: blue;
+}
+
+.all div:nth-child(3) {
+  background-color: var(--or);
+}
+
+.all div:nth-child(4) {
+  background-color: var(--o);
+}
+
+.all div:nth-child(5) {
+  background-color: var(--ss);
+}
+
+.all div:nth-child(6) {
+  background-color: var(--b);
+}
+
+.all div:nth-child(7) {
+  background-color: var(--n);
+}
+
+.all div:nth-child(8) {
+  background-color: var(--co);
+}
+
+.all div:nth-child(9) {
+  background-color: blue;
+}
+
+.all h1 {
+  margin-top: 0;
+}
+
 .all div h1 a {
   text-align: center;
   margin: 0 0 0 0;
@@ -101,7 +161,17 @@ nav {
 
 .disaster {
   text-align: center;
-  background-image: url();
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.disaster-bg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 /* will change based on actual data input */
