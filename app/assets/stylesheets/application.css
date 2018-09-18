@@ -25,10 +25,12 @@
   --br: rgb(127,108,75);
   --co: rgb(99,109,124);
   --l: rgb(104,148,48);
+  --lo: rgb(104,148,48,.5);
   --ps: rgb(154,186,106);
   --or: rgb(250,101,38);
   --oro: rgb(250,101,38,.5);
-  --alpha: 0.5;
+
+
 }
 
 font-family: 'Noto Serif JP', sans-serif;
@@ -58,6 +60,7 @@ nav {
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
   padding-left: 10%;
   padding-right: 10%;
+
 }
 
 .body {
@@ -74,9 +77,11 @@ nav {
   background-color: var(--s);
 }
 
-.nav h1 {
+.nav div a {
   margin: 0 0 0 0;
-  color: red;
+  text-decoration: none;
+  color: rgb(171, 41, 27);
+
 }
 
 .all {
@@ -87,9 +92,10 @@ nav {
   margin: 0 10%;
 }
 
-.all div h1 {
+.all div h1 a {
   text-align: center;
   margin: 0 0 0 0;
+
 }
 
 .disaster {
@@ -100,12 +106,16 @@ nav {
 /* will change based on actual data input */
 .disaster-box {
   padding-top: 10%;
-  /* border: 1px solid blue; */
   width: 20vw;
   height: 153px;
   background-color: var(--l);
   /* color: var(--b); */
-  border-radius: 22%;
+  border-radius: 0px 50px 50px;
+}
+
+.disaster-box:nth-child(even) {
+  background-color: var(--ps);
+
 }
 
 .disaster-box h1 {
@@ -114,8 +124,11 @@ nav {
 }
 
 .log-reg {
-  text-align: center;
-  margin-top: 10%;
+  background-color: var(--n);
+  padding-top: 25px;
+    /* margin-top: 0%;
+    margin-bottom: 0; */
+
 }
 
 .log-reg-box {
@@ -124,6 +137,49 @@ nav {
   margin-right: 35%;
   padding-top: 3%;
   padding-bottom: 3%;
-  border-radius: 15%;
+  border-radius: 0px 50px;
+  text-align: center;
+
+}
+.register {
+  background-color: var(--n);
+  padding-top: 25px;
+}
+.reg-box {
+  background-color: var(--t);
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-radius: 0px 50px;
+  text-align: center;
+}
+
+.edu {
+  margin: 10% 10%;
+  margin-top: 3%;
+                                                                                                                                                                                                                                    background-color: var(--ss);
+  padding: 3%;
+  border-radius: 0px 111px 111px;
+
+}
+
+.indent  {
+   margin-left:50px;
+}
+
+.edu-body {
+  background-color: var(--co);
+  font-family: 'Oxygen', sans-serif;
+}
+
+.edu-head {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bolder;
+}
+
+.profile {
+  background-color: var(--s);
 
 }
