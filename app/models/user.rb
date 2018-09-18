@@ -19,4 +19,27 @@ class User < ApplicationRecord
     BCrypt::Password.new(digest).is_password?(token)
   end
 
+
+    def self.from_omniauth(auth)
+      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+        user.provider = auth.provider
+        user.uid = auth.uid
+        name_to_be = auth.info.name
+        first = name_to_be.split(" ")[0]
+        last  = name_to_be.split(" ")[1]
+        user.first_name = first
+        user.last_name = last
+        user.email = auth.info.email
+        # user.city = auth.info.user_location
+        # user.provider_image = auth.info.image
+        user.oauth_token = auth.credentials.token
+        user.oauth_expires_at = Time.at(auth.credentials.expires_at)
+        user.password = SecureRandom.urlsafe_base64(n=6)
+        user.password_confirmation = user.password
+        # user.activated = true
+        # user.activated_at = Time.now
+        user.save!
+      end
+    end
+
 end
