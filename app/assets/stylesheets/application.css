@@ -142,8 +142,9 @@ nav {
 
 }
 .register {
-  background-color: var(--n);
+  /* background-color: var(--n); */
   padding-top: 25px;
+  margin: 0 0 0 0;
 }
 .reg-box {
   background-color: var(--t);
