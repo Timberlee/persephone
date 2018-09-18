@@ -5,6 +5,8 @@ class PagesController < ApplicationController
 
   def education
   end
+  def success
+  end
 
   def info
   end
