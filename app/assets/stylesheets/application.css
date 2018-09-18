@@ -56,7 +56,7 @@ nav {
   justify-content: center;
   color: white;
   margin: 0 0 0 0;
-  padding-top: 25%;
+  padding-top: 20%;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
   padding-left: 10%;
   padding-right: 10%;
@@ -186,4 +186,10 @@ nav {
 .profile {
   background-color: var(--s);
 
+}
+
+.be {
+  max-width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
