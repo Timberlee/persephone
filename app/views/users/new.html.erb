@@ -1,19 +1,20 @@
 
-<section >
-<h1>Sign up for Persephone</h1>
-<%= form_for(@user) do |f| %></p>
-  <p><%= f.text_field :first_name, placeholder: 'First Name' %></p>
-  <p><%= f.text_field :last_name, placeholder: 'Last Name'  %> </p>
-  <p><%= f.email_field :email, placeholder: 'Email', required: true  %>  </p>
-  <p><%= f.password_field :password, placeholder: 'Create a Password', required: true %></p>
-  <p><%= f.password_field :password_confirmation, placeholder: 'Confirm Password', required: true %> </p>
-  <p><%= f.label :photo, 'Upload a photo' %>
-  <%= f.file_field :photo %></p>
-  <p><%= f.text_area :bio, placeholder: 'Write a quick bio' %>  </p>
-  <label>Location: </label><%= f.select :location, [["East Coast", "East Coast"], ["West Coast", "West Coast"], ["Middle America", "Middle America"], ["Alaska & Hawaii", "Alaska & Hawaii"]], required: true %></p>
+<section class="register">
+  <div class="reg-box">
+    <h1>Sign up for Persephone</h1>
+    <%= form_for(@user) do |f| %></p>
+      <p><%= f.text_field :first_name, placeholder: 'First Name' %></p>
+      <p><%= f.text_field :last_name, placeholder: 'Last Name'  %> </p>
+      <p><%= f.email_field :email, placeholder: 'Email', required: true  %>  </p>
+      <p><%= f.password_field :password, placeholder: 'Create a Password', required: true %></p>
+      <p><%= f.password_field :password_confirmation, placeholder: 'Confirm Password', required: true %> </p>
+      <p><%= f.label :photo, 'Upload a photo' %>
+      <%= f.file_field :photo %></p>
+      <p><%= f.text_area :bio, placeholder: 'Write a quick bio' %>  </p>
+      <label>Location: </label><%= f.select :location, [["East Coast", "East Coast"], ["West Coast", "West Coast"], ["Middle America", "Middle America"], ["Alaska & Hawaii", "Alaska & Hawaii"]], required: true %></p>
 
 
-  <%= f.submit 'Register' %>
-  <% end %>
-
+      <%= f.submit 'Register' %>
+      <% end %>
+    </div>
 </section>
