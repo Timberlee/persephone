@@ -124,7 +124,7 @@ nav {
 }
 
 .log-reg {
-  background-color: var(--n);
+  /* background-color: var; */
   padding-top: 25px;
     /* margin-top: 0%;
     margin-bottom: 0; */
@@ -132,13 +132,15 @@ nav {
 }
 
 .log-reg-box {
-  background-color: var(--t);
+  background-color: rgb(30,37,53,.75);
   margin-left: 35%;
   margin-right: 35%;
+  margin-top: 8%;
   padding-top: 3%;
   padding-bottom: 3%;
   border-radius: 0px 50px;
   text-align: center;
+  color: white;
 
 }
 .register {
@@ -147,13 +149,14 @@ nav {
   margin: 0 0 0 0;
 }
 .reg-box {
-  background-color: var(--t);
+  background-color: rgb(30,37,53,.75);
   margin-left: 35%;
   margin-right: 35%;
   padding-top: 3%;
   padding-bottom: 3%;
   border-radius: 0px 50px;
   text-align: center;
+  color: white;
 }
 
 .edu {
