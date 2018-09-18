@@ -74,12 +74,13 @@ nav {
   font-size: 1.5vh;
   grid-column-gap: 7.5%;
   grid-column-gap: 7.5%;
-  background-color: var(--s);
+  background-color: rgb(222,201,141,.90);
 }
 
 .nav div a {
   margin: 0 0 0 0;
-  text-decoration: none;
+    text-decoration: none;
+
   color: rgb(171, 41, 27);
 
 }
@@ -141,17 +142,24 @@ nav {
   border-radius: 0px 50px;
   text-align: center;
   color: white;
-
 }
+
+
+.log-reg-box a {
+  color: white;
+  text-decoration: none;
+}
+
+
 .register {
   /* background-color: var(--n); */
-  padding-top: 25px;
   margin: 0 0 0 0;
 }
 .reg-box {
   background-color: rgb(30,37,53,.75);
   margin-left: 35%;
   margin-right: 35%;
+  margin-bottom: 5%;
   padding-top: 3%;
   padding-bottom: 3%;
   border-radius: 0px 50px;
@@ -162,7 +170,7 @@ nav {
 .edu {
   margin: 10% 10%;
   margin-top: 3%;
-                                                                                                                                                                                                                                    background-color: var(--ss);
+  background-color: var(--ss);
   padding: 3%;
   border-radius: 0px 111px 111px;
 
@@ -184,12 +192,26 @@ nav {
 }
 
 .profile {
-  background-color: var(--s);
+  /* background-color: var(--s); */
 
 }
+
+.profile-box {
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+.disaster-box h1 {
+  text-align:center;
+}
+
 
 .be {
   max-width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+}
+
+.nav h1 {
+
 }
