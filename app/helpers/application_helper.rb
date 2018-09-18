@@ -9,4 +9,10 @@ images = ["assets/s1.png",  "assets/s3.jpg", "assets/s4.jpg", "assets/s5.jpg","a
 images[rand(images.size)]
 end
 
+def edu_background_image
+images = ["assets/e1.jpg",  "assets/e2.jpg", "assets/e3.jpg"]
+images[rand(images.size)]
+end
+
+
 end
