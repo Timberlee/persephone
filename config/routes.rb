@@ -16,10 +16,10 @@ Rails.application.routes.draw do
   get '/success' => 'pages#success'
 
   get '/learn' => 'pages#education'
-  get '/info' => 'disasters#index'
-  get '/change' => 'pages#involve'
+  get '/ndisaster' => 'disasters#index'
+  get '/region' => 'pages#involve'
 
-  get '/disaster' => 'disasters#new'
+
   get 'disasters/edit'
   get 'all' => 'disasters#index'
   get 'disasters/show'
