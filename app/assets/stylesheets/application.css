@@ -90,37 +90,47 @@ nav {
 .nav div:nth-child(1) {
   margin-top: 5%;
   margin-left: 18%;
-
 }
 
 
+.nav a:hover {
+  color: rgb(5, 77, 14);
+  font-size: 2.8vh;
+}
+
 .nav div:nth-child(2) {
-  margin-top: 25%;
+  margin-top: 18%;
   font-weight: bold;
   margin-left: 8%;
 
 }
 
 .nav div:nth-child(3) {
-  margin-top: 25%;
+  margin-top: 18%;
   font-weight: bold;
+}
+
+.nav div {
+  width: 100px;
 }
 
 .nav div:nth-child(4) {
-  margin-top: 25%;
+  margin-top: 18%;
   font-weight: bold;
+
 }
 
 .nav div:nth-child(5) {
-  margin-top: 25%;
+  margin-top: 18%;
   font-weight: bold;
 }
 
 .nav div a {
   margin: 0 0 0 0;
-    text-decoration: none;
-
+  text-decoration: none;
   color: rgb(171, 41, 27);
+  transition-property: font-size;
+  transition-duration: 0.5As;
 
 }
 
