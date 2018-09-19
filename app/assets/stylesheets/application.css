@@ -28,6 +28,7 @@
   --sso: rgba(162, 191, 204,.9);
   --n: rgb(30,37,53);
   --no: rgba(30,37,53,.75);
+  --no: rgba(30,37,53,.750);
   --br: rgb(127,108,75);
   --bro: rgba(127,108,75,.9);
   --broo: rgba(127,108,75,.8);
@@ -51,6 +52,7 @@ font-family: 'Noto Serif JP', sans-serif;
 font-family: 'Cantora One', sans-serif;
 font-family: 'Paprika', cursive;
 font-family: 'Oxygen', sans-serif;
+font-family: 'Roboto', sans-serif;
 
 html {
   margin:0 0 0 0;
@@ -66,15 +68,19 @@ nav {
 }
 
 .quote {
-  font-family: 'Noto Serif JP', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   color: white;
-  margin: 0 0 0 0;
-  padding-top: 20%;
+  margin: 15% 26% 0 23%;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding-left: 0%; */
+  /* padding-right: 0%; */
+  padding: 2% 3% 2% 3%;
+  /* padding-bottom: 2%; */
+  background-color: var(--no);
+  border-radius: 0px 61px 61px;
+
 
 }
 
@@ -124,7 +130,7 @@ nav {
 }
 
 .nav div:nth-child(4) {
-  margin-top: 8%;
+  margin-top: 6.5%;
   font-weight: bold;
   width: 20vw;
   transition-property: font-size;
@@ -153,7 +159,7 @@ nav {
 }
 
 .all div:nth-child(1) {
-  background-color: var(--bro);
+  background-color: var(--broo);
 }
 
 .all div:nth-child(2) {
