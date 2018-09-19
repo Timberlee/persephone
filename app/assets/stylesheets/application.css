@@ -21,6 +21,7 @@
   --bo: rgba(85,73,62,.8);
   --s: rgb(222,201,141);
   --so: rgba(222,201,141,.9);
+  --son: rgba(222,201,141,.5);
   --o: rgb(45,35,182);
   --oo: rgba(45,35,182,.85);
   --ss: rgb(162, 191, 204);
@@ -29,8 +30,10 @@
   --no: rgba(30,37,53,.75);
   --br: rgb(127,108,75);
   --bro: rgba(127,108,75,.9);
+  --broo: rgba(127,108,75,.8);
   --co: rgb(99,109,124);
   --coo: rgba(99,109,124,.85);
+  --con: rgba(99,109,124,.5);
   --l: rgb(104,148,48);
   --lo: rgba(104,148,48,.8);
   --ps: rgb(154,186,106);
@@ -38,7 +41,9 @@
   --oro: rgba(250,101,38,.8);
   --r: rgb(171, 41, 27);
   --ro: rgba(171, 41, 27,.8);
-  --none:
+  --purp: rgb(85, 75, 112);
+  --purpo: rgba(85, 75, 112,.8);
+
 }
 
 
@@ -83,7 +88,7 @@ nav {
   margin: 0 0 0 0;
   font-size: 2vh;
   grid-column-gap: 12.5%;
-  background-color: var(--so);
+  background-color: var(--so)  ;
   height: 10vh;
 }
 
@@ -93,7 +98,7 @@ nav {
 }
 
 
-.nav a:hover {
+.nav div a:hover {
   color: rgb(5, 77, 14);
   font-size: 2.8vh;
 }
@@ -102,12 +107,16 @@ nav {
   margin-top: 18%;
   font-weight: bold;
   margin-left: 8%;
+  transition-property: font-size;
+  transition-duration: 0.5s;
 
 }
 
 .nav div:nth-child(3) {
   margin-top: 18%;
   font-weight: bold;
+  transition-property: font-size;
+  transition-duration: 0.5s;
 }
 
 .nav div {
@@ -115,23 +124,24 @@ nav {
 }
 
 .nav div:nth-child(4) {
-  margin-top: 18%;
+  margin-top: 8%;
   font-weight: bold;
-
+  width: 20vw;
+  transition-property: font-size;
+  transition-duration: 0.5s;
 }
 
 .nav div:nth-child(5) {
   margin-top: 18%;
   font-weight: bold;
+  transition-property: font-size;
+  transition-duration: 0.5s;
 }
 
 .nav div a {
   margin: 0 0 0 0;
   text-decoration: none;
-  color: rgb(171, 41, 27);
-  transition-property: font-size;
-  transition-duration: 0.5As;
-
+  color: var(--r);
 }
 
 .all {
@@ -139,43 +149,43 @@ nav {
   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
   grid-column-gap: 10vw;
   grid-row-gap: 5vh;
-  margin: 0 10%;
+  margin: 0 7%;
 }
 
 .all div:nth-child(1) {
-  background-color: var(--bo);
-}
-
-.all div:nth-child(2) {
-  background-color: var(--oo);
-}
-
-.all div:nth-child(3) {
-  background-color: var(--oro);
-}
-
-.all div:nth-child(4) {
-  background-color: var(--ro);
-}
-
-.all div:nth-child(5) {
-  background-color: var(--sso);
-}
-
-.all div:nth-child(6) {
   background-color: var(--bro);
 }
 
-.all div:nth-child(7) {
-  background-color: var(--no);
+.all div:nth-child(2) {
+  background-color: var(--oro);
 }
 
-.all div:nth-child(8) {
+.all div:nth-child(3) {
+  background-color: var(--oo);
+}
+
+.all div:nth-child(4) {
+  background-color: rgba(85, 75, 112,.8);
+}
+
+.all div:nth-child(5) {
+  background-color: var(--lo);
+}
+
+.all div:nth-child(6) {
+  background-color: var(--bo);
+}
+
+.all div:nth-child(7) {
   background-color: var(--coo);
 }
 
+.all div:nth-child(8) {
+  background-color: var(--no);
+}
+
 .all div:nth-child(9) {
-  background-color: var(--lo);
+  background-color: var(--ro);
 }
 
 .all h1 {
@@ -197,6 +207,13 @@ nav {
   background-attachment: fixed;
   background-position: center;
   background-size: 100% 100%;
+  background-color: var(--bro);
+  margin: 3% 10% 3% 10%;
+  padding: 3%;
+  color:white;
+  /* font-weight: bold; */
+  border-radius: 0px 111px 111px;
+
 }
 
 .disaster-bg {
@@ -209,9 +226,9 @@ nav {
 /* will change based on actual data input */
 .disaster-box {
   padding-top: 10%;
-  width: 20vw;
-  height: 165px;
-  background-color: var(--l);
+  width: 22vw;
+  height: 225px;
+  /* background-color: var(--l); */
   /* color: var(--b); */
   border-radius: 0px 50px 50px;
 }
@@ -220,9 +237,9 @@ nav {
   color: white;
 }
 
-.disaster-box:nth-child(even) {
+/* .disaster-box:nth-child(even) {
   background-color: var(--ps);
-}
+} */
 
 .disaster-box h1 {
   color: var(--o);
@@ -281,7 +298,7 @@ nav {
 }
 
 .indent  {
-   margin-left:50px;
+   margin-left: 20%;
 }
 
 .edu-body {
@@ -317,10 +334,6 @@ nav {
   margin-left: 25%;
   margin-right: 25%;
   border-radius: 15%;
-}
-
-.nav h1 {
-
 }
 
 

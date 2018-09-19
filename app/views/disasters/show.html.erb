@@ -1,11 +1,10 @@
 <body style="background-image: url(<%= @disaster.similar %>)" class='disaster-bg'>
 <section class='disaster'>
-  <h1><%= @disaster.name %> </h1><br>
-  <%= @disaster.photo.attachment.nil? ? 'No photo' : image_tag(@disaster.photo) %><br>
+  <h1><%= @disaster.name %> </h1>
+  <!-- <%= @disaster.photo.attachment.nil? ? 'No photo' : image_tag(@disaster.photo) %><br> -->
   <h3>Basic Info: <%= @disaster.description %></h3>
-  <p>What to do Before: <%= @disaster.before %></p>
-  <p>What to do During: <%= @disaster.during %></p>
-  <p>After: <%= @disaster.after %></p>
-  <p>Similar: <%= @disaster.similar %></p>
-  <p>Regions: <%= @disaster.regions %> /year</p>
+  <p> <%= @disaster.before %></p>
+  <p><%= @disaster.during %></p>
+  <p><%= @disaster.after %></p>
+  <p><strong>Regions: </strong><%= @disaster.regions %> /year</p>
 </section>
