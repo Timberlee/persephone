@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: [:show, :edit, :update]
+  include HTTParty
+  include JSON
+
+  before_action :find_user, only: [:edit, :update]
 
     def new
       @user = User.new
@@ -9,7 +12,7 @@ class UsersController < ApplicationController
       @user = User.new(user_params)
 
       if @user.save
-        redirect_to @user
+        redirect_to root_path
       else
 
         render 'new'
@@ -31,11 +34,16 @@ end
     end
 
     def profile
-
     end
 
     def show
 
+    @user = current_user
+     @news = HTTParty.get('https://newsapi.org/v2/top-headlines?'\
+       'country=us&'\
+       'apiKey=c71e9cd76635457fbf224a4e47c9603f')
+     @request_hash = JSON.parse(@news.to_s)
+     @xs = @request_hash['articles']
     end
 
     def index
@@ -51,5 +59,6 @@ end
     def find_user
       @user = User.find(params[:id])
     end
+
 
   end

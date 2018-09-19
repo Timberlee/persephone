@@ -4,4 +4,12 @@
 <p><strong>Email: </strong><%= @user.email %></p>
 <p><strong>Bio: </strong><%= @user.bio %></p>
 <p><strong>Location: </strong><%= @user.location %></p>
+<%= link_to 'Log Out', logout_path, method: :delete %>
 </section>
+<% @xs.each do |f|  %>
+<div>
+<h1><%= f['title'] %></h1>
+<p><%= f['content'] %></p>
+<p><%= f['url'] %></p>
+<%end%>
+</div>
