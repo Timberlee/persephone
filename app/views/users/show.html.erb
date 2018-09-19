@@ -1,7 +1,7 @@
 <section class='profile'>
 <h1><%= @user.full_name %> </h1><br>
 <%= @user.photo.attachment.nil? ? 'No photo' : image_tag(@user.photo) %><br>
-<p>Email: <%= @user.email %></p>
-<p>Bio: <%= @user.bio %></p>
-<p>Location: <%= @user.location %></p>
+<p><strong>Email: </strong><%= @user.email %></p>
+<p><strong>Bio: </strong><%= @user.bio %></p>
+<p><strong>Location: </strong><%= @user.location %></p>
 </section>

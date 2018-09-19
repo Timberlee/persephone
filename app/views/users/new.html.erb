@@ -12,11 +12,10 @@
       <p><%= f.email_field :email, placeholder: 'Email', required: true  %>  </p>
       <p><%= f.password_field :password, placeholder: 'Create a Password', required: true %></p>
       <p><%= f.password_field :password_confirmation, placeholder: 'Confirm Password', required: true %> </p>
-      <p><%= f.label :photo, 'Upload a photo' %>
+      <strong><p><%= f.label :photo, 'Upload a photo' %></strong><br><br>
       <%= f.file_field :photo %></p>
       <p><%= f.text_area :bio, placeholder: 'Write a quick bio' %>  </p>
-      <label>Location: </label><%= f.select :location, [["East Coast", "East Coast"], ["West Coast", "West Coast"], ["Middle America", "Middle America"], ["Alaska & Hawaii", "Alaska & Hawaii"]], required: true %></p>
-
+      <label><strong>Location: </strong></label><%= f.select :location, [["East Coast", "East Coast"], ["West Coast", "West Coast"], ["Middle America", "Middle America"], ["Alaska & Hawaii", "Alaska & Hawaii"]], required: true %></p>
 
       <%= f.submit 'Register' %>
       <% end %>
