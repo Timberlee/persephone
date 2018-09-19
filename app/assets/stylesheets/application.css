@@ -18,20 +18,29 @@
   --g: rgb(102, 142, 84);
   --t: rgb(223, 186, 106);
   --b: rgb(85,73,62);
+  --bo: rgba(85,73,62,.8);
   --s: rgb(222,201,141);
+  --so: rgba(222,201,141,.9);
   --o: rgb(45,35,182);
+  --oo: rgba(45,35,182,.85);
   --ss: rgb(162, 191, 204);
+  --sso: rgba(162, 191, 204,.9);
   --n: rgb(30,37,53);
+  --no: rgba(30,37,53,.75);
   --br: rgb(127,108,75);
+  --bro: rgba(127,108,75,.9);
   --co: rgb(99,109,124);
+  --coo: rgba(99,109,124,.85);
   --l: rgb(104,148,48);
-  --lo: rgb(104,148,48,.5);
+  --lo: rgba(104,148,48,.8);
   --ps: rgb(154,186,106);
   --or: rgb(250,101,38);
-  --oro: rgb(250,101,38,.5);
-
-
+  --oro: rgba(250,101,38,.8);
+  --r: rgb(171, 41, 27);
+  --ro: rgba(171, 41, 27,.8);
+  --none:
 }
+
 
 font-family: 'Noto Serif JP', sans-serif;
 font-family: 'Cantora One', sans-serif;
@@ -44,6 +53,7 @@ html {
 
 body {
   margin: 0 0 0 0;
+  font-family: 'Oxygen', sans-serif;
 }
 
 nav {
@@ -71,37 +81,56 @@ nav {
   display: grid;
   grid-template: 15vh / 1fr 1fr 1fr 1fr 1fr;
   margin: 0 0 0 0;
-  font-size: 1.5vh;
-  grid-column-gap: 7.5%;
-  grid-column-gap: 7.5%;
-  background-color: rgb(222,201,141,.90);
+  font-size: 2vh;
+  grid-column-gap: 12.5%;
+  background-color: var(--so);
+  height: 10vh;
 }
 
 .nav div:nth-child(1) {
+  margin-top: 5%;
+  margin-left: 18%;
+}
 
+
+.nav a:hover {
+  color: rgb(5, 77, 14);
+  font-size: 2.8vh;
 }
 
 .nav div:nth-child(2) {
+  margin-top: 18%;
+  font-weight: bold;
+  margin-left: 8%;
 
 }
 
 .nav div:nth-child(3) {
+  margin-top: 18%;
+  font-weight: bold;
+}
 
+.nav div {
+  width: 100px;
 }
 
 .nav div:nth-child(4) {
+  margin-top: 18%;
+  font-weight: bold;
 
 }
 
 .nav div:nth-child(5) {
-
+  margin-top: 18%;
+  font-weight: bold;
 }
 
 .nav div a {
   margin: 0 0 0 0;
-    text-decoration: none;
-
+  text-decoration: none;
   color: rgb(171, 41, 27);
+  transition-property: font-size;
+  transition-duration: 0.5As;
 
 }
 
@@ -114,39 +143,39 @@ nav {
 }
 
 .all div:nth-child(1) {
-  background-color: var(--br);
+  background-color: var(--bo);
 }
 
 .all div:nth-child(2) {
-  background-color: blue;
+  background-color: var(--oo);
 }
 
 .all div:nth-child(3) {
-  background-color: var(--or);
+  background-color: var(--oro);
 }
 
 .all div:nth-child(4) {
-  background-color: var(--o);
+  background-color: var(--ro);
 }
 
 .all div:nth-child(5) {
-  background-color: var(--ss);
+  background-color: var(--sso);
 }
 
 .all div:nth-child(6) {
-  background-color: var(--b);
+  background-color: var(--bro);
 }
 
 .all div:nth-child(7) {
-  background-color: var(--n);
+  background-color: var(--no);
 }
 
 .all div:nth-child(8) {
-  background-color: var(--co);
+  background-color: var(--coo);
 }
 
 .all div:nth-child(9) {
-  background-color: blue;
+  background-color: var(--lo);
 }
 
 .all h1 {
@@ -156,8 +185,11 @@ nav {
 .all div h1 a {
   text-align: center;
   margin: 0 0 0 0;
-
+  text-decoration: none;
+  color: white;
 }
+
+
 
 .disaster {
   text-align: center;
@@ -178,15 +210,18 @@ nav {
 .disaster-box {
   padding-top: 10%;
   width: 20vw;
-  height: 153px;
+  height: 165px;
   background-color: var(--l);
   /* color: var(--b); */
   border-radius: 0px 50px 50px;
 }
 
+.disaster-box li {
+  color: white;
+}
+
 .disaster-box:nth-child(even) {
   background-color: var(--ps);
-
 }
 
 .disaster-box h1 {
@@ -203,7 +238,7 @@ nav {
 }
 
 .log-reg-box {
-  background-color: rgb(30,37,53,.75);
+  background-color: var(--no);
   margin-left: 35%;
   margin-right: 35%;
   margin-top: 8%;
@@ -226,7 +261,7 @@ nav {
   margin: 0 0 0 0;
 }
 .reg-box {
-  background-color: rgb(30,37,53,.75);
+  background-color: var(--no);
   margin-left: 35%;
   margin-right: 35%;
   margin-bottom: 5%;
@@ -240,10 +275,9 @@ nav {
 .edu {
   margin: 10% 10%;
   margin-top: 3%;
-  background-color: var(--ss);
+  background-color: var(--sso);
   padding: 3%;
   border-radius: 0px 111px 111px;
-
 }
 
 .indent  {
@@ -263,6 +297,7 @@ nav {
 
 .profile {
   /* background-color: var(--s); */
+  margin-left: 5%;
 
 }
 
@@ -276,12 +311,46 @@ nav {
 }
 
 
+
 .be {
   max-width: 50%;
   margin-left: 25%;
   margin-right: 25%;
+  border-radius: 15%;
 }
 
 .nav h1 {
 
+}
+
+
+.log-reg-box a {
+  color: ;
+}
+
+form input[type= "Submit"] {
+ font-family: 'Roboto', sans-serif;
+ margin-top: .5%;
+ background-color: var(--bg);
+ font-size: 2.3vh;
+ color: var(--y);
+ border-radius: 12px;
+ border: 3px solid var(--g);
+ padding: 5px;
+}
+
+
+.bttn {
+  font-family: 'Roboto', sans-serif;
+  margin-top: .5%;
+  background-color: ;
+  font-size: 2.3vh;
+  color: white;
+  border-radius: 12px;
+  border: 3px solid var(--g);
+  padding: 5px;
+}
+
+.main {
+  color: white;
 }
