@@ -41,7 +41,9 @@ end
     @user = current_user
      @news = HTTParty.get('https://newsapi.org/v2/top-headlines?'\
        'country=us&'\
+       'category=science&'\
        'apiKey=c71e9cd76635457fbf224a4e47c9603f')
+       p @news
      @request_hash = JSON.parse(@news.to_s)
      @xs = @request_hash['articles']
     end
