@@ -1,15 +1,18 @@
 <section class='profile'>
+  <div id='left'>
 <h1><%= @user.full_name %> </h1><br>
 <%= @user.photo.attachment.nil? ? 'No photo' : image_tag(@user.photo) %><br>
 <p><strong>Email: </strong><%= @user.email %></p>
 <p><strong>Bio: </strong><%= @user.bio %></p>
 <p><strong>Location: </strong><%= @user.location %></p>
 <%= link_to 'Log Out', logout_path, method: :delete %>
-</section>
-<% @xs.each do |f|  %>
-<div>
-<h1><%= f['title'] %></h1>
+</div>
+<div id='right'>
+  <h1>Latest Science & Environment News:</h1>
+  <% @xs.each do |f|  %>
+<h2><%= f['title'] %></h2>
 <p><%= f['content'] %></p>
-<p><%= f['url'] %></p>
+<p><%= link_to 'Read more!', f['url'] %></p>
 <%end%>
 </div>
+</section>
