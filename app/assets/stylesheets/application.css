@@ -356,10 +356,39 @@ nav {
 }
 #left {
   margin-top: 5%;
+  background-color: var(--sso);
+  margin-bottom: auto;
+  border-radius: 0px 111px 0 111px;
+}
+
+#left-text {
+  text-align: center;
+}
+
+#left-text h1 {
+  font-size: 6vh;
 }
 
 #right {
   margin-top: 7%;
+  background-color: var(--sso);
+  margin-bottom: auto;
+  padding: 0 11% 0 11%;
+  width: 27vw;
+  border-radius: 0px 111px 111px;
+}
+
+#right-text {
+  text-align: center;
+}
+
+#right-text h2 {
+  color: var(--n);
+}
+
+#articles {
+  background-color: var(--broo);
+  border-radius: 0px 111px 0 111px;
 }
 
 .profile img {
