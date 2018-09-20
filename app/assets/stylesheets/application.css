@@ -472,7 +472,7 @@ form input[type= "Submit"] {
   text-align: center;
 }
 
-.regions h1:hover & {
+.regions h1:hover  {
    transform: scale(2);
  }
 
