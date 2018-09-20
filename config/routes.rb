@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#destroy'
 
   get '/register' => 'users#new'
-  get 'users/edit'
+
   get '/profile' => 'users#show'
-  get 'users/index'
+
 
   get '/auth/:provider/callback', to: 'sessions#facebook'
   get '/success' => 'pages#success'
@@ -22,8 +22,8 @@ Rails.application.routes.draw do
   get '/region' => 'pages#involve'
 
 
-  get 'disasters/edit'
+
   get 'all' => 'disasters#index'
-  get 'disasters/show'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
