@@ -359,6 +359,7 @@ nav {
   background-color: var(--sso);
   margin-bottom: auto;
   border-radius: 0px 111px 0 111px;
+  padding-bottom: 5%;
 }
 
 #left-text {
@@ -503,6 +504,7 @@ form input[type= "Submit"] {
   background-color: var(--b);
   color: var(--s);
   font-family: 'Oxygen', sans-serif;
+  margin-top: 5%;
 }
 
 .footer a {
@@ -521,4 +523,9 @@ form input[type= "Submit"] {
   margin-left: 25%;
   margin-right: 10%;
   max-width: 80%;
+}
+
+.region-btns div a {
+  padding-left: 5%;
+  padding-right: 5%;
 }
