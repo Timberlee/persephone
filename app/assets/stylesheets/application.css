@@ -349,7 +349,7 @@ nav {
   margin-left: 5%;
   display: grid;
   grid-template: auto / 1fr 1fr;
-  margin-left: 10%;
+  margin-left: 6%;
   margin-right: 10%;
   grid-column-gap: 15%;
 }
@@ -358,6 +358,7 @@ nav {
   background-color: var(--sso);
   margin-bottom: auto;
   border-radius: 0px 111px 0 111px;
+  padding-bottom: 5%;
 }
 
 #left-text {
@@ -372,9 +373,9 @@ nav {
   margin-top: 7%;
   background-color: var(--sso);
   margin-bottom: auto;
-  padding: 0 11% 0 11%;
+  padding: 0 18% 0 18%;
   width: 27vw;
-  border-radius: 0px 111px 111px;
+  border-radius: 0px 117px 111px;
 }
 
 #right-text {
@@ -387,7 +388,12 @@ nav {
 
 #articles {
   background-color: var(--broo);
-  border-radius: 0px 111px 0 111px;
+  border-radius: 0px 100px 0 111px;
+  padding-left: 2%;
+  padding-right: 8%;
+  width: 30vw;
+  margin-left: -10%;
+  padding-top: 2%;
 }
 
 .profile img {
@@ -502,6 +508,7 @@ form input[type= "Submit"] {
   background-color: var(--b);
   color: var(--s);
   font-family: 'Oxygen', sans-serif;
+  margin-top: 5%;
 }
 
 .footer a {
@@ -520,4 +527,15 @@ form input[type= "Submit"] {
   margin-left: 25%;
   margin-right: 10%;
   max-width: 80%;
+}
+
+.region-btns div a {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logout {
+  background-color: var(--br);
+  text-decoration: none;
+  color: red;
 }

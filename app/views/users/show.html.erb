@@ -10,9 +10,9 @@
     <h1><%= @user.full_name %> </h1><br>
     <%= @user.photo.attachment.nil? ? 'No photo' : image_tag(@user.photo) %><br>
     <p><strong>Email: </strong><%= @user.email %></p>
-    <p><strong>Bio: </strong><%= @user.bio %></p>
-    <p><strong>Location: </strong><%= @user.location %></p>
-    <%= link_to 'Log Out', logout_path, method: :delete %>
+    <p><strong>Bio:</strong><%= @user.bio.nil? ? 'Join Persephone to Create a Bio' : @user.bio %></p>
+
+    <%= link_to 'Log Out', logout_path, method: :delete, class: 'bttn main logout' %>
   </div>
 </div>
 
@@ -25,7 +25,7 @@
       <h2><%= f['title'] %></h2>
       <p><%= f['content'] %></p>
       <p><%= link_to 'Read more!', f['url'] %></p><br>
-      </div>
+    </div><br>
       <%end%>
 
   </div>
