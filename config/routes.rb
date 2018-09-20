@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/profile' => 'users#show'
 
-
+  get '/sources' => 'pages#sources'
   get '/auth/:provider/callback', to: 'sessions#facebook'
   get '/success' => 'pages#success'
   get '/about' => 'pages#about'
