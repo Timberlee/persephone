@@ -96,10 +96,10 @@ nav {
   grid-template: 15vh / 13% 13% 13% 13% 13%;
   margin: 0 0 0 0;
   font-size: 2vh;
-  grid-column-gap: 2  %;
+  grid-column-gap: 7%;
   background-color: var(--so);
   height: 12vh;
-  grid-column-gap: 5%;
+
 }
 
 .nav h1 a {
@@ -124,7 +124,7 @@ nav {
 
 .nav div a:hover {
   color: rgb(5, 77, 14);
-  font-size: 2.8vh;
+  font-size: 2.5vh;
 }
 
 .nav div:nth-child(2) {
