@@ -24,7 +24,10 @@
       <p>- In sum: extreme heat and sea level rises threaten health, energy, agriculture, and more.</p>
       <%# sources: http://www.climatecentral.org/news/new-report-climate-change-a-global-issue-with-regional-impacts-17404
       https://climate.nasa.gov/effects/ %>
+      <div id="seaTempChartContainer" style="height: 500px; width: 80%;">Canvas is not supported in your browser</div><%#when the chart is too narrow, it omits labels on the x axis %>
+
     </details>
+
   </div>
 
 
@@ -54,6 +57,7 @@
           <p>- Warmer winters and a growing season up to six weeks longer would enable pests like the corn earworm to expand their range.</p>
           <p>- Crop production would be inhibited by changing rain patterns such as wetter springs(which delay planting and increase flood risk) and almost 15 percent less rain during the increasingly hot summers.</p>
         </summary>
+        <div id="midwestChartContainer" style="height: 500px; width: 80%;">Canvas is not supported in your browser</div><%#when the chart is too narrow, it omits labels on the x axis %>
     </div>
 
   <div class="west">
@@ -93,3 +97,5 @@
       </summary>
     </div>
   </div>
+  <script type="text/javascript" src="/canvasjs.min.js"></script> <%#find me in /public%>
+  <script type="text/javascript" src="/app/assets/javascripts/seaTempMidWestChart.js"></script>
