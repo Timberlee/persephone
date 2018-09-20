@@ -62,8 +62,7 @@ body {
   margin: 0 0 0 0;
   font-family: 'Oxygen', sans-serif;
   min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
+
 }
 
 nav {
@@ -492,7 +491,7 @@ form input[type= "Submit"] {
 }
 
 .home {
-  min-height: 75vh;
+  min-height: 55vh;
 }
 
 
