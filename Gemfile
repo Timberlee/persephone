@@ -53,7 +53,7 @@ end
 
 group :production do
   gem 'pg'
-end 
+end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
