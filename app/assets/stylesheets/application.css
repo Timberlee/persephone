@@ -533,3 +533,9 @@ form input[type= "Submit"] {
   padding-left: 5%;
   padding-right: 5%;
 }
+
+.logout {
+  background-color: var(--br);
+  text-decoration: none;
+  color: red;
+}
