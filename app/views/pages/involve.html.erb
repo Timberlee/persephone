@@ -1,74 +1,95 @@
-*East Coast
+<style type="text/css">
+  body {
+    background: url(<%= edu_background_image %>) no-repeat center center fixed;
+  }
+</style>
+<!-- <div class="region-btns"> -->
+<!-- a name tags purposely placed on wrong sections to that titles visually appeasr where I want them ot onclick -->
+  <a class="button reg" href="#">East Coast</a>
+  <a class="button reg" href="#cwide">Country-wide</a>
+  <a class="button reg" href="#mwest">Mid West</a>
+  <a class="button reg" href="#west">West Coast</a>
+<!-- </div> -->
 
-- Sea levels have risen 8 inches globally since reliable recordkeeping started in 1880. Across the northeast, the sea level has risen 10-13 inches. This rise has made the odds of coastal flooding in New York similar to that of Hurricane Sandy <strong>20 times greater</strong>, and helped Sandy overtop barriers. Projections show that sea levels could rise by an <em>additional 48 inches</em> - that's four feet - by the year 2100.
-- 50 million people live or work in the metropolitan areas of the northeast, which are already subject to the urban heat island effect - where heat builds up and can result in temperatures 10 degrees Farenheit hotter than in surrounding areas. With increased temperatures, residents from Washington D.C. and Philadelphia could see the number of days in a year over 95 degrees Farenheit <b>double</b> by 2050.
-- In short: heat waves, heavy downpours, and rising sea levels all pose threats to infrastructure, agriculture, fisheries, and ecosystems.
-- The southeast experiences hurricanes on a yearly basis. Both the strength and frequency of category 4 and 5 (the most powerful) hurricanes have increased since 1980.
-- Sea levels are also rising faster than the global average in the southeast, with a potential 6 inches of rise by 2030.
-- In sum: extreme heat and sea level rises threaten health, energy, agriculture, and more.
-<%# sources: http://www.climatecentral.org/news/new-report-climate-change-a-global-issue-with-regional-impacts-17404
-https://climate.nasa.gov/effects/ %>
-*Country wide
-- Across the country, a warmer climate leads to warmer winters. This harms us twofold: it helps many harmful pests and hurts helpful insects. It allows harmful pests to start reproducing earlier in the spring as well as extend their range northward. This hurts crop yields and increases the costs of pesticides. Likewise, it hurts honeybees who expend more energy during the winter when they should be resting for the pollinating season in the spring.
-<%# source: https://www.washingtonpost.com/national/health-science/a-bugged-life-warm-winter-could-mean-more-insects/2012/03/07/gIQA5b033R_story.html?noredirect=on&utm_term=.b37d2dcd4bff %>
-*Midwest and Great Plains Global Warming
+<div class="regions">
+  <div class="east">
+    <details>
+      <summary><h1><a name="cwide"><a name="east">East Coast</h1></summary>
 
--Increased heatwaves in the nation's heartland over the last six decades on average, with significant and growing implications for public health.
+      <p>- Sea levels have risen 8 inches globally since reliable recordkeeping started in 1880. Across the northeast, the sea level has risen 10-13 inches. This rise has made the odds of coastal flooding in New York similar to that of Hurricane Sandy <strong>20 times greater</strong>, and helped Sandy overtop barriers. Projections show that sea levels could rise by an <em>additional 48 inches</em> - that's four feet - by the year 2100.</p>
+      <p>- 50 million people live or work in the metropolitan areas of the northeast, which are already subject to the urban heat island effect - where heat builds up and can result in temperatures 10 degrees Farenheit hotter than in surrounding areas. With increased temperatures, residents from Washington D.C. and Philadelphia could see the number of days in a year over 95 degrees Farenheit <b>double</b> by 2050.</p>
+      <p>- In short: heat waves, heavy downpours, and rising sea levels all pose threats to infrastructure, agriculture, fisheries, and ecosystems.</p>
+      <p>- The southeast experiences hurricanes on a yearly basis. Both the strength and frequency of category 4 and 5 (the most powerful) hurricanes have increased since 1980.</p>
+      <p>- Sea levels are also rising faster than the global average in the southeast, with a potential 6 inches of rise by 2030.</p>
+      <p>- In sum: extreme heat and sea level rises threaten health, energy, agriculture, and more.</p>
+      <%# sources: http://www.climatecentral.org/news/new-report-climate-change-a-global-issue-with-regional-impacts-17404
+      https://climate.nasa.gov/effects/ %>
+    </details>
+  </div>
 
-- Dangerous Storms & Flooding - heavy rains more common throughout the year, including risk of flood
-- Winters and springs will be 25% wetter, increasing the pre existing high flood risk.
-- Two heatwaves per summer, the standard summer will be hotter than the hottest year on record
-- Air quality deteriorates as hotter weather causes more sever smog problems. Greater risk for asthma and other respiratory conditions.
 
-Agricultural Threats
+  <div class"country">
+    <details>
+      <summary><h1><a NAME="mwest">Country wide</h1></summary>
+        <p>Across the country, a warmer climate leads to warmer winters.This harms us twofold:
+            <p class="indent-text">
+            - It helps many harmful pests and hurts helpful insects. It allows harmful pests to start reproducing earlier in the spring as well as extend their range northward.</p>
+            <p class="indent-text">- This hurts crop yields and increases the costs of pesticides. Likewise, it hurts honeybees who expend more energy during the winter when they should be resting for the pollinating season in the spring.</p>
+        <%# source: https://www.washingtonpost.com/national/health-science/a-bugged-life-warm-winter-could-mean-more-insects/2012/03/07/gIQA5b033R_story.html?noredirect=on&utm_term=.b37d2dcd4bff %>
 
-- Crops and livestock face substantially more heat stress, decreasing crop yield and livestock productivity
-- Warmer winters and a growing season up to six weeks longer would enable pests like the corn earworm to expand their range.
-- Crop production would be inhibited by changing rain patterns such as wetter springs(which delay planting and increase flood risk) and almost 15 percent less rain during the increasingly hot summers.
+    </details>
+  </div>
 
-*West Coast
-BEACH EROSION
+  <div class="midwest">
+    <details>
+      <summary><h1>Midwest and Great Plains Global Warming</h1></summary>
+        <p>- Increased heatwaves in the nation's heartland over the last six decades on average, with significant and growing implications for public health.</p>
+        <p>- Dangerous Storms & Flooding - heavy rains more common throughout the year, including risk of flood.</p>
+        <p>- Winters and springs will be 25% wetter, increasing the pre existing high flood risk.</p>
+        <p>- Two heatwaves per summer, the standard summer will be hotter than the hottest year on record.</p>
+        <p>- Air quality deteriorates as hotter weather causes more sever smog problems. Greater risk for asthma and other respiratory conditions.</p>
 
-*More severe droughts and reduced winter snowpack
+        <h2>Agricultural Threats</h2>
+          <p>- Crops and livestock face substantially more heat stress, decreasing crop yield and livestock productivity.</p>
+          <p>- Warmer winters and a growing season up to six weeks longer would enable pests like the corn earworm to expand their range.</p>
+          <p>- Crop production would be inhibited by changing rain patterns such as wetter springs(which delay planting and increase flood risk) and almost 15 percent less rain during the increasingly hot summers.</p>
+        </summary>
+    </div>
 
-Growing risk of "mega droughts" - also a risk to the midwest
+  <div class="west">
+    <details>
+      <summary><h1><a NAME="west">West Coast</h1></summary>
+      BEACH EROSION
 
-Less snowmelt exacerbates water scarcity - effects agriculture ecosystems and urban areas
+        <h2>More severe droughts and reduced winter snowpack</h2>
+          <p>- Growing risk of "mega droughts" - also a risk to the midwest</p>
+          <p>- Less snowmelt exacerbates water scarcity - effects agriculture ecosystems and urban areas</p>
+          <p>- More extreme / wet weather</p><br>
 
-More extreme / wet weather
+        <h2>Increased pressure on groundwater supplies</h2>
+          <p>- Demand is rising naturally but also because  of climate change</p>
+          <p>- Aquifers on the decline for decades now</p>
+          <p>- Longer & more damaging wildfire seasons</p>
+          <p>- Increase costs to fight fires</p>
+          <p>- Forests are hotter and drier due to high temperatures and a lack of snowmelt</p>
 
-*Increased pressure on groundwater supplies -
+        <em><strong><h2>This is the perfect condition for fires to spred!</h2></strong></em>
 
-demand is rising naturally but also b/c of climate change
+        <p><strong>ALL</strong> of the top five largest fires in CA since 1932 have happened since 2000</p><br>
 
-aquifers on the decline for decades now
+        <h2>Widespread effects on the Pacific northwest</h2>
+          <p>- Impacting the warming of sensitive ecosystems of the region.</p>
+          <p>- Shellfish hatcheries failing because of acidifying oceans, less snowmelt jeopardizing freshwater species like salmon and trout</p><br>
 
-*Longer & more damaging wildfire seasons
+        <h2>Extensive forest death in the rocky mountains</h2>
+          <p>- 10s of millions of trees have died in the Rocky Mountains over the past 15 years over an area as large as Colorodo. 129 million trees in california have faced a similar fate in this time period</p><br>
 
-Increase costs to fight fires
+        <h2>Costly and growing health impacts</h2>
+          <p>- More heat waves, worsening air, and water quality, increase in infections disease. Increasing duration of heat waves in the west, which brings a greater risk of death from dehydration, heat stroke, heart attack, and other heart related illnesses, particularly for less affluent neighborhoods that may not have as many trees for shande or access to air conditioning.</p>
+          <p>- Will cause an increase in allergens which exacerbate lung diseases such as asthma and can cause breathing difficulties even in healthy people</p><br>
 
-Forests are hotter and drier due to high temperatures and a lack of snowmelt
-
-This is the perfect condition for fires to spred
-
-ALL of the tip five largest fires in CA since 1932 have happened since 2000
-
-*Widespread effects on the Pacific northwest
-
-Impacting the warming of sensitive ecosystems of the region. Shellfish hatcheries failing
-because of acidifying oceans, less snowmelt jeopardizing freshwater species like salmon and trout
-
-*Extensive forest death in the rocky mountains
-
-10s of millions of trees have died in the Rocky Mountains over the past 15 years over an area
-as large as Colorodo. 129 million trees in california have faced a similar fate in this time period
-
-*Costly and growing health impacts
-
-More heat waves, worsening air, and water quality, increase in infections disease. Increasing duration of heat waves in the west, which brings a greater risk of death from dehydration, heat stroke, heart attack, and other heart related illnesses, particularly for less affluent neighborhoods that may not have as many trees for shande or access to air conditioning.
-
-Will cause an increase in allergens which exacerbate lung diseases such as asthma and can cause breathing difficulties even in healthy people
-
-*Coastal Impacts
-
-Increasing sea levels, which leads to tidal flooding, shoeline erosion, saltwater intrusion, larger strom surges, and permanent inundation. Oncea acidification also threatens significant marine species such as oysters and Pacific salmon
+        <h2>Coastal Impacts</h2>
+          <p>- Increasing sea levels, which leads to tidal flooding, shoeline erosion, saltwater intrusion, larger strom surges, and permanent inundation. Oncea acidification also threatens significant marine species such as oysters and Pacific salmon</p>
+      </summary>
+    </div>
+  </div>
