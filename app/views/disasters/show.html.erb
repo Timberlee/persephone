@@ -2,9 +2,9 @@
 <section class='disaster'>
   <h1><%= @disaster.name %> </h1>
   <!-- <%= @disaster.photo.attachment.nil? ? 'No photo' : image_tag(@disaster.photo) %><br> -->
-  <h3>Basic Info: <%= @disaster.description %></h3>
+  <h3>Basic Info: <%= @disaster.basic_info %></h3>
   <p> <%= @disaster.before %></p>
   <p><%= @disaster.during %></p>
   <p><%= @disaster.after %></p>
-  <p><strong>Regions: </strong><%= @disaster.regions %> /year</p>
+  <p><strong>Regions: </strong><%= @disaster.regions %></p>
 </section>
