@@ -1,4 +1,9 @@
-<section class='profile'>
+<style type="text/css">
+  body {
+    background: url(<%= signup_background_image %>) no-repeat center center fixed;
+  }
+</style>
+<section class='profile '>
   <div id='left'>
 <h1><%= @user.full_name %> </h1><br>
 <%= @user.photo.attachment.nil? ? 'No photo' : image_tag(@user.photo) %><br>
