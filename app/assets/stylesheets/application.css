@@ -266,7 +266,7 @@ nav {
 }
 
 .log-reg {
-  /* background-color: var; */
+
   padding-top: 25px;
     /* margin-top: 0%;
     margin-bottom: 0; */
@@ -414,9 +414,7 @@ nav {
 }
 
 
-.log-reg-box a {
-  color: ;
-}
+
 
 form input[type= "Submit"] {
  font-family: 'Roboto', sans-serif;
@@ -433,7 +431,7 @@ form input[type= "Submit"] {
 .bttn {
   font-family: 'Roboto', sans-serif;
   margin-top: .5%;
-  background-color: ;
+
   font-size: 2.3vh;
   color: white;
   border-radius: 12px;
