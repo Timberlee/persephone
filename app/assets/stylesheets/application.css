@@ -99,6 +99,7 @@ nav {
   grid-column-gap: 2  %;
   background-color: var(--so);
   height: 12vh;
+  grid-column-gap: 5%;
 }
 
 .nav h1 a {
