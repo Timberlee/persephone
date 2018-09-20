@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get '/auth/:provider/callback', to: 'sessions#facebook'
   get '/success' => 'pages#success'
+  get '/about' => 'pages#about'
+  get '/privacy' => 'pages#privacy'
 
   get '/learn' => 'pages#education'
   get '/ndisaster' => 'disasters#index'
