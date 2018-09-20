@@ -1,8 +1,8 @@
 //canvasjs will break if you skip over charts (i.e. have a chart created in the javascript but don't actually use all of them in the html) in the js file. single-use js files.
 //I also think that one can't load two charts in separate files in one page; my guess is is one can only have one window.onload function.
 //I also think that these functions need to be called somewhere, anywhere, or else leave out the js files or it breaks it. Don't quote me on that.
-window.onload = function() {
-
+// window.onload = function() {
+//function cowFarts() {
 var carbonDioxideChart = new CanvasJS.Chart("carbonDioxideChartContainer", {
     title: {
       text: "Carbon Dioxide Parts Per Million"
@@ -25,8 +25,7 @@ var carbonDioxideChart = new CanvasJS.Chart("carbonDioxideChartContainer", {
       type: "line",
       name: "Carbon Dioxide Parts Per Million",
       showInLegend: true,
-      dataPoints:
-      [
+      dataPoints: [
       { x: 1, y:	276.7	},
       { x: 2, y:	276.8	},
       { x: 3, y:	276.8	},
@@ -2048,6 +2047,11 @@ var carbonDioxideChart = new CanvasJS.Chart("carbonDioxideChartContainer", {
     ] //datapoints in dataseries 1 of 1
   } //data series 1
   ]//array of dataseries
+
 });
   carbonDioxideChart.render();
-}//window onload
+  // document.getElementById("carbonDioxideChartContainer").addEventListener("load", cowFarts());
+  // document.getElementById("carbonDioxideChartContainer").onload = function(){carbonDioxideChart.render()};
+  // carbonDioxideChart.render();
+// }//window onload
+//}
