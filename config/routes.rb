@@ -11,7 +11,6 @@ Rails.application.routes.draw do
 
   get '/profile' => 'users#show'
 
-  get '/sources' => 'pages#sources'
   get '/auth/:provider/callback', to: 'sessions#facebook'
   get '/success' => 'pages#success'
   get '/about' => 'pages#about'
@@ -20,7 +19,7 @@ Rails.application.routes.draw do
   get '/learn' => 'pages#education'
   get '/ndisaster' => 'disasters#index'
   get '/region' => 'pages#involve'
-
+  get '/sources' => 'pages#sources'
 
 
   get 'all' => 'disasters#index'
